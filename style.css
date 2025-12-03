@@ -185,7 +185,6 @@ p {
 ul.d-list {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
   padding: 0;
   color: var(--clr-text-primary);
   & > * {
@@ -555,7 +554,8 @@ ul.d-list {
 
 @media (width < 900px) {
   .d-desc-graph {
-    --circle-width: 130px;
+    --circle-width: 100px;
+    font-size: 10px;
     gap: 0;
 
     & > *:nth-child(1) {
@@ -778,6 +778,7 @@ ul.d-list {
 .d-list-use {
   display: flex;
   height: 100%;
+  flex-direction: column;
   counter-reset: use-list-counter;
 }
 
@@ -835,8 +836,9 @@ ul.d-list {
 }
 
 .d-use-icons {
-  --grid-col-size: 100px;
-  column-gap: 2rem;
+  --grid-col-size: 100%;
+  column-gap: 1rem;
+  row-gap: 2rem;
   img {
     height: 122px;
     object-fit: contain;
@@ -857,6 +859,7 @@ ul.d-list {
 }
 
 @media (width < 900px) {
-  .d-use-icons {
+  .d-p-10 {
+    padding: 1rem;
   }
 }
