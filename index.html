@@ -48,7 +48,7 @@
           В ЧЕМ ОТЛИЧИЕ МЕЖДУ БОРЬБОЙ <br />
           СО СТАРЕНИЕМ И ЗДОРОВЫМ ДОЛГОЛЕТИЕМ?
         </h2>
-        <div class="d-desc-graph-grid d-clr-primary">
+        <div class="d-grid d-grid-cols d-desc-graph-grid d-clr-primary">
           <div class="d-desc-graph d-bg-white d-rounded">
             <div>
               <span>Этап 1</span>
@@ -114,9 +114,11 @@
       </div>
 
       <div class="d-buble-bg d-clr-primary d-p-10 d-rounded">
-        <h2 class="d-mb-7">ПОЧЕМУ ВАЖНА ЭНЕРГИЯ ДЛЯ КЛЕТОК КОЖИ?</h2>
-        <div class="d-grid d-grid-cols">
-          <div class="d-flex d-flex-col d-gap-300 d-py-5 d-px-4">
+        <h2 class="d-mb-7">ПОЧЕМУ ВАЖНА ЭНЕРГИЯ ДЛЯ КЛЕТОК КОЖИ?</h2>
+        <div class="d-grid d-grid-cols d-gap-300">
+          <div
+            class="d-flex d-flex-col d-desc-bg-beige d-rounded d-gap-300 d-py-5 d-px-4"
+          >
             <div class="d-card">
               <img src="images/desc_icon3.webp" alt="exhausted woman" />
               <p class="d-bold-700 d-fz-500">
@@ -130,7 +132,9 @@
               <li>Выглядит уставшим</li>
             </ul>
           </div>
-          <div class="d-flex d-flex-col d-gap-300 d-py-5 d-px-4">
+          <div
+            class="d-flex d-flex-col d-desc-bg-beige d-rounded d-gap-300 d-py-5 d-px-4"
+          >
             <div class="d-card">
               <img
                 src="images/desc_icon4.webp"
@@ -177,31 +181,52 @@
         </picture>
       </div>
 
-      <div class="d-desc-product d-p-10 d-clr-primary d-rounded">
-        <div class="d-flex d-flex-col d-gap-500">
+      <div class="d-grid d-desc-product d-rounded d-hidden d-clr-primary">
+        <img src="images/desc_product-single.webp" alt="Artistry LongXevity™" />
+        <div class="d-flex d-flex-col d-p-10 d-gap-500">
           <h2 class="d-fz-600 d-uppercase d-mb-6">
             <strong class="d-desk-clr-light">Artistry LongXevity™</strong>
             <br />
             Восстанавливающий тонер-сыворотка
           </h2>
           <p>Легкая текстура, напоминающая жидкое золото</p>
-          <div class="d-grid-even-cols d-grid-even-cols-sm d-gap-200">
+          <div class="d-grid d-grid-cols d-desc-product-grid d-gap-200">
             <div class="d-card d-card-min-content">
-              <img src="images/desc-svg4.svg" alt="icon" />
+              <img
+                src="images/desc-svg4.svg"
+                width="100%"
+                height="100%"
+                alt="icon"
+              />
               <p>Мгновенно повышает увлажненность кожи на 358%*</p>
             </div>
             <div class="d-card d-card-min-content">
-              <img src="images/desc-svg5.svg" alt="icon" />
+              <img
+                width="100%"
+                height="100%"
+                src="images/desc-svg5.svg"
+                alt="icon"
+              />
               <p>
                 Помогает уменьшить выраженность пигментации, улучшает цвет лица
               </p>
             </div>
             <div class="d-card d-card-min-content">
-              <img src="images/desc-svg6.svg" alt="icon" />
+              <img
+                width="100%"
+                height="100%"
+                src="images/desc-svg6.svg"
+                alt="icon"
+              />
               <p>Помогает восстановить баланс микробиома кожи</p>
             </div>
             <div class="d-card d-card-min-content">
-              <img src="images/desc-svg7.svg" alt="icon" />
+              <img
+                width="100%"
+                height="100%"
+                src="images/desc-svg7.svg"
+                alt="icon"
+              />
               <p>Сокращение морщин, улучшение текстуры кожи</p>
             </div>
           </div>
@@ -212,20 +237,23 @@
         </div>
       </div>
 
-      <div class="d-desc-footer d-p-10 d-rounded d-clr-primary d-my-5">
-        <h2 class="d-fz-600 d-uppercase d-mb-6">Как он работает?</h2>
-        <ul class="d-list d-desc-list-footer">
-          <li>Защита кожи от синего света и свободных радикалов</li>
-          <li>Восстановление естественных биоритмов кожи</li>
-          <li>Повышение энергии АТФ в клетке на 51,7%*</li>
-          <li>Избавление от клеток-зомби, вызывающих воспаление</li>
-          <li>Удаление следов усталости и стресса</li>
-          <li>Сохранение натуральной ретиноевой кислоты в коже</li>
-          <li>
-            Минимизация покраснения <br />
-            и расширенные поры
-          </li>
-        </ul>
+      <div class="d-grid d-desc-footer d-rounded d-clr-primary d-my-5">
+        <div class="d-flex d-flex-col d-p-10">
+          <h2 class="d-fz-600 d-uppercase d-mb-6">Как он работает?</h2>
+          <ul class="d-grid d-grid-cols d-desc-list-footer">
+            <li>Защита кожи от синего света и свободных радикалов</li>
+            <li>Восстановление естественных биоритмов кожи</li>
+            <li>Повышение энергии АТФ в клетке на 51,7%*</li>
+            <li>Избавление от клеток-зомби, вызывающих воспаление</li>
+            <li>Удаление следов усталости и стресса</li>
+            <li>Сохранение натуральной ретиноевой кислоты в коже</li>
+            <li>
+              Минимизация покраснения <br />
+              и расширенные поры
+            </li>
+          </ul>
+        </div>
+        <img src="images/desc_woman.webp" alt="image of a woman" />
       </div>
     </section>
 
@@ -233,8 +261,15 @@
 
     <section class="d-container d-clr-primary">
       <picture>
-        <source srcset="images/adv_hero-bg_mb.webp" media="(max-width: 900px)" />
-        <img class="d-rounded-top" src="images/adv_hero-bg.webp" alt="" />
+        <source
+          srcset="images/adv_hero-bg_mb.webp"
+          media="(max-width: 900px)"
+        />
+        <img
+          class="d-rounded-top d-adv-image"
+          src="images/adv_hero-bg.webp"
+          alt=""
+        />
       </picture>
       <div class="d-bg-gradient-inset d-rounded-bottom d-p-10">
         <h2 class="d-fz-600 d-uppercase d-mb-7">
@@ -242,7 +277,7 @@
           тонер-сыворотка
         </h2>
         <div
-          class="d-grid-even-cols d-grid-even-cols-lg d-desc-icons-grid2 d-gap-500"
+          class="d-grid d-grid-cols d-grid-cols-lg d-desc-icons-grid2 d-gap-500 d-fz-400 d-bold-600"
         >
           <div class="d-card d-card-min-content">
             <img src="images/adv_svg1.svg" alt="icon" />
@@ -284,8 +319,8 @@
           <span class="d-clr-secondary d-fz-700 d-bold-700">+ 410%</span>
           <p>
             к индексу жизнеспособности и устойчивости кожи при использовании с
-            Насыщенным кремом (арт. 127571) Эффективность подтверждена
-            лабораторными тестами Invitro*.
+            <strong>Насыщенным кремом </strong> (арт. 127571) Эффективность
+            подтверждена лабораторными тестами Invitro*.
           </p>
         </div>
 
@@ -305,7 +340,7 @@
         <div>
           <div class="d-card d-card-min-content d-mb-6">
             <img src="images/desc-svg4.svg" alt="icon" />
-            <p class="d-bold-600 d-fz-500">Сразу после нанесения</p>
+            <p class="d-bold-600 d-fz-500">Через 3 дня</p>
           </div>
           <ul class="d-list">
             <li>Свежесть и упругость кожи</li>
@@ -318,7 +353,7 @@
         <div>
           <div class="d-card d-card-min-content d-mb-6">
             <img src="images/desc-svg4.svg" alt="icon" />
-            <p class="d-bold-600 d-fz-500">Сразу после нанесения</p>
+            <p class="d-bold-600 d-fz-500">Через 4 недели</p>
           </div>
           <ul class="d-list">
             <li>Улучшение внешнего вида мелких морщин</li>
@@ -330,8 +365,8 @@
 
       <div class="d-p-10 d-adv-footer-bg d-rounded">
         <h2 class="d-fz-600 d-mb-6 d-uppercase">Результат</h2>
-        <div class="d-grid d-adv-grid d-gap-300">
-          <div class="d-grid d-adv-grid d-gap-100">
+        <div class="d-flex d-adv-result d-gap-300">
+          <div class="d-flex  d-gap-100">
             <figure class="d-figure">
               <img
                 class="d-rounded-left"
@@ -349,7 +384,7 @@
               <figcaption class="d-figcaption">После</figcaption>
             </figure>
           </div>
-          <div class="d-grid d-adv-grid d-gap-100">
+          <div class="d-flex d-gap-100">
             <figure class="d-figure">
               <img
                 class="d-rounded-left"
@@ -382,7 +417,7 @@
           инновационный подход и позиционирование новой серии с точки зрения
           <strong>ЗДОРОВОГО ДОЛГОЛЕТИЯ</strong> в функциях кожи.
         </p>
-        <div class="d-grid-even-cols d-comp-grid d-mb-10">
+        <div class="d-grid d-grid-cols d-comp-grid d-mb-10">
           <picture>
             <source
               srcset="images/comp_leaf_mb.webp"
@@ -407,7 +442,7 @@
           </picture>
         </div>
         <h2 class="d-fz-600 d-uppercase d-mb-5">Новые ингредиенты</h2>
-        <div class="d-grid-even-cols d-comp-grid-icons d-mb-10 d-gap-300">
+        <div class="d-grid d-grid-cols d-comp-grid-icons d-mb-10 d-gap-300">
           <div class="d-flex d-flex-col d-gap-300">
             <div class="d-comp-icons">
               <img src="images/comp_ing1.webp" alt="ingridient icon" />
@@ -505,8 +540,8 @@
         <h2 class="d-fz-600 d-uppercase d-mb-5">
           Влияние на цикл жизни клетки
         </h2>
-        <div class="d-grid-even-cols d-comp-grid-cells d-mb-10 d-gap-300">
-          <figure class="d-figure">
+        <div class="d-grid d-grid-cols d-comp-grid-cells d-mb-10 d-gap-300">
+          <figure class="d-figure d-flex-start">
             <picture>
               <source
                 srcset="images/comp_cycle1_mb.webp"
@@ -522,7 +557,7 @@
               ФОРМИРОВАНИЕ
             </figcaption>
           </figure>
-          <figure class="d-figure">
+          <figure class="d-figure d-flex-start">
             <picture>
               <source
                 srcset="images/comp_cycle2_mb.webp"
@@ -538,7 +573,7 @@
               РОСТ И СОЗРЕВАНИЕ
             </figcaption>
           </figure>
-          <figure class="d-figure">
+          <figure class="d-figure d-flex-start">
             <picture>
               <source
                 srcset="images/comp_cycle3_mb.webp"
@@ -606,7 +641,7 @@
         </p>
       </div>
 
-      <div class="d-grid-even-cols d-comp-grid-footer-bg d-gap-400">
+      <div class="d-grid d-grid-cols d-comp-grid-footer-bg d-gap-400">
         <picture>
           <source
             srcset="images/comp_footer-bg_mb.webp"
@@ -635,9 +670,10 @@
       </div>
     </section>
 
-    <!-- состав -->
+    <!-- Применение -->
+
     <section class="d-container d-clr-primary">
-      <div class="d-grid d-grid-even-cols d-gap-400">
+      <div class="d-grid d-grid-cols d-gap-400">
         <div class="d-star-bg d-flex d-flex-col d-p-6 d-rounded">
           <h2 class="d-fz-600 d-uppercase d-mb-6">
             Рекомендации по применению
@@ -676,7 +712,7 @@
             <img src="images/use_icon1.svg" alt="icon" />
             <p class="d-bold-600 d-fz-500 d-uppercase">УТРО</p>
           </div>
-          <div class="d-grid-even-cols d-use-icons">
+          <div class="d-grid d-grid-cols d-use-icons">
             <figure class="d-figure d-fz-400">
               <img
                 src="images/use_product1.webp"
@@ -761,7 +797,7 @@
             <img src="images/use_icon2.svg" alt="icon" />
             <p class="d-bold-600 d-fz-500 d-uppercase">Вечер</p>
           </div>
-          <div class="d-grid-even-cols d-use-icons">
+          <div class="d-grid d-grid-cols d-use-icons">
             <figure class="d-figure d-fz-400">
               <img
                 src="images/use_product7.webp"
