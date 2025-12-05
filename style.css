@@ -570,9 +570,11 @@ ul.d-list {
 }
 
 @media (width < 900px) {
+  
   .d-desc-graph {
-    --circle-width: 100px;
-    font-size: 10px;
+    padding: 0;
+    --circle-width: 140px;
+    font-size: 12px;
     gap: 0;
 
     & > *:nth-child(1) {
@@ -594,6 +596,7 @@ ul.d-list {
   }
 
   .d-desc-product {
+    grid-template-columns: 1fr;
     & > *:first-child {
       display: block;
     }
